@@ -1,0 +1,17 @@
+[package]
+name = "wpm-rs"
+version = "0.1.0"
+edition = "2024"
+description = "Reader and writer for Warcraft III pathing maps (war3map.wpm)"
+license = "CC0-1.0"
+
+[[bin]]
+name = "wpm-rs"
+path = "src/main.rs"
+
+[lib]
+name = "wpm_rs"
+path = "src/lib.rs"
+
+[dependencies]
+parser-rs = { path = "../parser-rs" }
